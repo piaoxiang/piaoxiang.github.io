@@ -100,10 +100,6 @@
       
       <!-- reward -->
       
-      <div id="reward-btn">
-        Reward
-      </div>
-      
     </div>
     
     
@@ -246,7 +242,7 @@
     <ul class="list-inline">
       <li>
         &copy;
-        2015-2020
+        2020
         John Doe
       </li>
       <li>
@@ -389,7 +385,7 @@
 <script>
   try {
     var typed = new Typed("#subtitle", {
-      strings: ['面朝大海，春暖花开', '愿你一生努力，一生被爱', '想要的都拥有，得不到的都释怀'],
+      strings: ['恍惚面对世界，笔直面对自己', '热爱可抵岁月漫长，愿未来可期', '想要的都拥有，得不到的都释怀'],
       startDelay: 0,
       typeSpeed: 200,
       loop: true,
@@ -539,6 +535,30 @@
 </script>
 
 
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+  });
+
+  MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.6/unpacked/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+  var ayerConfig = {
+    mathjax: true
+  }
+</script>
+
 
 
 
@@ -548,7 +568,28 @@
 
 <script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
 
+  
+<script src="/js/clickLove.js"></script>
 
+
+
+    
+    <div id="music">
+    
+    
+    
+    <iframe frameborder="no" border="1" marginwidth="0" marginheight="0" width="200" height="52"
+        src="//music.163.com/outchain/player?type=2&id=299936&auto=1&height=32"></iframe>
+</div>
+
+<style>
+    #music {
+        position: fixed;
+        right: 15px;
+        bottom: 0;
+        z-index: 998;
+    }
+</style>
     
   </div>
 </body>
